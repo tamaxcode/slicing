@@ -17,5 +17,5 @@ func TestFilter_Numbers(t *testing.T) {
 
     want := []int64{2, 4, 6, 8, 10}
 
-    assert.Equal(t, got, want)
+    assert.Equal(t, want, got)
 }
