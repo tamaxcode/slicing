@@ -1,4 +1,4 @@
-package sliceutil
+package slicing
 
 // FilterFunc represents filter callback function.
 // It will receives index and slice's element of each iteration as parameter.

@@ -1,4 +1,4 @@
-package sliceutil
+package slicing
 
 // ForEachFunc represents ForEach callback function.
 // It will receives index and slice's element of each iteration as parameter

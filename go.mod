@@ -1,4 +1,4 @@
-module github.com/tamaxcode/sliceutil
+module github.com/tamaxcode/slicing
 
 go 1.18
 

@@ -1,4 +1,4 @@
-package sliceutil
+package slicing
 
 // MapFunc represents map callback function.
 // It will receives index and slice's element of each iteration as parameter

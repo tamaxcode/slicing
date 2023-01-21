@@ -1,10 +1,10 @@
-package sliceutil_test
+package slicing_test
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/tamaxcode/sliceutil"
+	"github.com/tamaxcode/slicing"
 )
 
 func TestForEach_IterateAll(t *testing.T) {
@@ -14,7 +14,7 @@ func TestForEach_IterateAll(t *testing.T) {
 	}
 
 	got := make([]int64, 10)
-	sliceutil.ForEach(numbers, func(i int, e int64) bool {
+	slicing.ForEach(numbers, func(i int, e int64) bool {
 		got[i] = e
 		return true
 	})
@@ -29,7 +29,7 @@ func TestForEach_Break(t *testing.T) {
 	}
 
 	got := make([]int64, 0)
-	sliceutil.ForEach(numbers, func(i int, e int64) bool {
+	slicing.ForEach(numbers, func(i int, e int64) bool {
 		got = append(got, e)
 
 		return !(i == 4)

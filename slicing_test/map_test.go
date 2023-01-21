@@ -1,11 +1,11 @@
-package sliceutil_test
+package slicing_test
 
 import (
 	"strconv"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/tamaxcode/sliceutil"
+	"github.com/tamaxcode/slicing"
 )
 
 func TestMap_NumbersTimes2(t *testing.T) {
@@ -15,7 +15,7 @@ func TestMap_NumbersTimes2(t *testing.T) {
 		numbers[i-1] = int64(i)
 	}
 
-	got := sliceutil.Map(numbers, func(i int, e int64) int64 {
+	got := slicing.Map(numbers, func(i int, e int64) int64 {
 		return e * 2
 	})
 
@@ -31,7 +31,7 @@ func TestMap_NumbersToString(t *testing.T) {
 		numbers[i-1] = int64(i)
 	}
 
-	got := sliceutil.Map(numbers, func(i int, e int64) string {
+	got := slicing.Map(numbers, func(i int, e int64) string {
 		return strconv.FormatInt(e, 10)
 	})
 

@@ -1,10 +1,10 @@
-package sliceutil_test
+package slicing_test
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/tamaxcode/sliceutil"
+	"github.com/tamaxcode/slicing"
 )
 
 func TestFilter_Numbers(t *testing.T) {
@@ -13,7 +13,7 @@ func TestFilter_Numbers(t *testing.T) {
 		numbers[i-1] = int64(i)
 	}
 
-	got := sliceutil.Filter(numbers, func(idx int, e int64) bool {
+	got := slicing.Filter(numbers, func(idx int, e int64) bool {
 		return e%2 == 0
 	})
 
